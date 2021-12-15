@@ -1,0 +1,7 @@
+{
+  "name": "DietingApplication",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
