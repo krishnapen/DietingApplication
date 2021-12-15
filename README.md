@@ -1,10 +1,12 @@
 # DietingApplication
 
-This is Dieting Application which tracks the Food intake in a day, User can see Carbs, Protein, Fats, Calories for every food type added in the day.
+This is a Dieting Application that tracks the Food intake in a day, User can see Carbs, proteins, Fats, Calories for every food type added in the day.
 
 Running :
 
-Clone the project & use command "ionic serve" or "npm start" to run the project and visit the url show in the terminal
+Clone the project & use the command "ionic serve" or "npm start" to run the project and visit the URL shown in the terminal
+
+Note: To view it as an app, you need to view it in chrome developers console/Dev tools and you can select the mobile device or press F12 to open dev tools directly.
 
 ScreenShot:
 
