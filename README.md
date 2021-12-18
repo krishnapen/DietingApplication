@@ -4,7 +4,7 @@ This is a Dieting Application that tracks the Food intake in a day, User can see
 
 Running :
 
-Clone the project & use the command "ionic serve" or "npm start" to run the project and visit the URL shown in the terminal
+Clone the project, navigate to the directory in the terminal and use the command "ionic serve" or "npm start" to run the project and visit the URL shown in the terminal
 
 Note: To view it as an app, you need to view it in chrome developers console/Dev tools and you can select the mobile device or press F12 to open dev tools directly.
 
