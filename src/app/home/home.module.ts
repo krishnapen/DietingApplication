@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
-import { MessageComponentModule } from '../message/message.module';
 // import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { MessageComponentModule } from '../message/message.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MessageComponentModule,
     HomePageRoutingModule,
     // Ng2GoogleChartsModule
   ],
