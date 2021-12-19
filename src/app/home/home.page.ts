@@ -78,14 +78,15 @@ export class HomePage {
     //   this.calorieCount = this.calorieCount + this.saveArray[i].calories;
     // }
 
-    
 
     this.saveArray.forEach(element => {
-       this.calorieCount = element || 0;
-       this.calorieCount = this.calorieCount + element.calories;
+      this.calorieCount = element || 0;
+      this.calorieCount = this.calorieCount + element.calories;
     });
 
-    console.log("calories count " + this.calorieCount);
+    // console.log("calories count " + this.calorieCount);
+
+    this.plotSimpleBarChart();
 
   }
 
@@ -98,13 +99,18 @@ export class HomePage {
     this.plotSimpleBarChart();
   }
 
+  calories : number;
+  carbs : number;
+  protein : number;
   plotSimpleBarChart() {
 
-
     this.saveArray.forEach(element => {
-       this.calorieCount = element.calories;
+      this.calories = element.calories;
+      this.carbs = element.carbs;
+      this.protein = element.protein;
+      console.log("calories" + this.calories);
     });
-     
+
 
     let myChart = HighCharts.chart('highcharts', {
       chart: {
@@ -114,7 +120,7 @@ export class HomePage {
         text: 'Diet Tracker'
       },
       xAxis: {
-        categories: ['Apples', 'Bananas', 'Oranges']
+        categories: ['Calories', 'Proteins', 'Carbs']
       },
       yAxis: {
         title: {
@@ -125,7 +131,7 @@ export class HomePage {
         {
           name: 'User',
           type: undefined,
-          data: [300, 7, 3]
+          data: [this.calories, this.carbs, this.protein]
         }]
     });
   }
